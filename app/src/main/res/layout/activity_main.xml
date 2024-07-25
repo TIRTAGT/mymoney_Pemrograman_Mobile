@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity">
+
+	<FrameLayout
+		android:id="@+id/MainFragmentContainer"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		app:layout_constraintBottom_toTopOf="@+id/bottom_navbar"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+	</FrameLayout>
+
+	<LinearLayout
+		android:id="@+id/bottom_navbar"
+		android:layout_width="0dp"
+		android:layout_height="60dp"
+		android:orientation="vertical"
+		android:visibility="gone"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		tools:visibility="visible">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="2dp"
+			android:background="@color/bottom_navbar_divider"
+			android:visibility="visible" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:baselineAligned="false">
+
+			<LinearLayout
+				android:id="@+id/bottom_navbar_transaction"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_marginHorizontal="8dp"
+				android:layout_weight="0.25"
+				android:gravity="center"
+				android:orientation="vertical">
+
+				<ImageView
+					android:id="@+id/bottom_navbar_transaction_image"
+					android:layout_width="wrap_content"
+					android:layout_height="30dp"
+					android:importantForAccessibility="no"
+					app:srcCompat="@drawable/book_24"
+					app:tint="@color/bottom_navbar_inactive_menu" />
+
+				<TextView
+					android:id="@+id/bottom_navbar_transaction_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:backgroundTint="#DB0B0B"
+					android:text="Transaksi"
+					android:textColor="@color/bottom_navbar_inactive_menu"
+					android:textSize="16sp" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/bottom_navbar_stats"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_marginHorizontal="8dp"
+				android:layout_weight="0.25"
+				android:gravity="center"
+				android:orientation="vertical">
+
+				<ImageView
+					android:id="@+id/bottom_navbar_stats_image"
+					android:layout_width="wrap_content"
+					android:layout_height="30dp"
+					android:importantForAccessibility="no"
+					app:srcCompat="@drawable/finance_24"
+					app:tint="@color/bottom_navbar_inactive_menu" />
+
+				<TextView
+					android:id="@+id/bottom_navbar_stats_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Statistik"
+					android:textColor="@color/bottom_navbar_inactive_menu"
+					android:textSize="16sp" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/bottom_navbar_asset"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_marginHorizontal="8dp"
+				android:layout_weight="0.25"
+				android:gravity="center"
+				android:orientation="vertical">
+
+				<ImageView
+					android:id="@+id/bottom_navbar_asset_image"
+					android:layout_width="wrap_content"
+					android:layout_height="30dp"
+					android:importantForAccessibility="no"
+					app:srcCompat="@drawable/database_24"
+					app:tint="@color/bottom_navbar_inactive_menu" />
+
+				<TextView
+					android:id="@+id/bottom_navbar_asset_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Aset"
+					android:textColor="@color/bottom_navbar_inactive_menu"
+					android:textSize="16sp" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/bottom_navbar_more"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_marginHorizontal="8dp"
+				android:layout_weight="0.25"
+				android:gravity="center"
+				android:orientation="vertical">
+
+				<ImageView
+					android:id="@+id/bottom_navbar_more_image"
+					android:layout_width="wrap_content"
+					android:layout_height="30dp"
+					android:importantForAccessibility="no"
+					app:srcCompat="@drawable/more_horiz_24"
+					app:tint="@color/bottom_navbar_inactive_menu" />
+
+				<TextView
+					android:id="@+id/bottom_navbar_more_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Lainnya"
+					android:textColor="@color/bottom_navbar_inactive_menu"
+					android:textSize="16sp" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

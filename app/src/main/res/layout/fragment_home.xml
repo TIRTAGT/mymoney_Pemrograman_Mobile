@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".fragment.home.HomeFragment">
+
+	<LinearLayout
+		android:id="@+id/linearLayout"
+		android:layout_width="0dp"
+		android:layout_height="40dp"
+		android:orientation="horizontal"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<ImageView
+			android:id="@+id/fragment_home_pagination_previous"
+			android:layout_width="30dp"
+			android:layout_height="match_parent"
+			android:layout_marginHorizontal="8dp"
+			android:src="@drawable/keyboard_arrow_left_24" />
+
+		<TextView
+			android:id="@+id/fragment_home_pagination_display"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:gravity="center"
+			android:text="ABC 2024"
+			android:textSize="16sp"
+			android:textStyle="bold" />
+
+		<ImageView
+			android:id="@+id/fragment_home_pagination_next"
+			android:layout_width="30dp"
+			android:layout_height="match_parent"
+			android:layout_marginHorizontal="8dp"
+			android:src="@drawable/keyboard_arrow_right_24" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="end"
+			android:orientation="horizontal">
+
+			<ImageView
+				android:layout_width="30dp"
+				android:layout_height="match_parent"
+				android:layout_marginHorizontal="8dp"
+				android:src="@drawable/search_24" />
+
+			<ImageView
+				android:layout_width="30dp"
+				android:layout_height="match_parent"
+				android:layout_marginHorizontal="8dp"
+				android:src="@drawable/tune_24" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<HorizontalScrollView
+		android:id="@+id/horizontalScrollView"
+		android:layout_width="0dp"
+		android:layout_height="43dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:orientation="horizontal">
+
+			<LinearLayout
+				android:id="@+id/fragment_home_header_harian_menu"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:gravity="center"
+					android:paddingHorizontal="10dp"
+					android:text="Harian"
+					android:textSize="16sp"
+					android:textStyle="bold" />
+
+				<LinearLayout
+					android:id="@+id/fragment_home_header_harian_menu_active_icon"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:background="@color/red"
+					android:orientation="horizontal"
+					android:visibility="gone"
+					tools:visibility="visible"></LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/fragment_home_header_kalender_menu"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:paddingHorizontal="10dp"
+				android:visibility="gone">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:gravity="center"
+					android:text="Kalender"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:visibility="gone" />
+
+				<LinearLayout
+					android:id="@+id/fragment_home_header_kalender_menu_active_icon"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:background="@color/red"
+					android:orientation="horizontal"
+					android:visibility="gone"></LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/fragment_home_header_bulanan_menu"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:paddingHorizontal="10dp">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:gravity="center"
+					android:text="Bulanan"
+					android:textSize="16sp"
+					android:textStyle="bold" />
+
+				<LinearLayout
+					android:id="@+id/fragment_home_header_bulanan_menu_active_icon"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:background="@color/red"
+					android:orientation="horizontal"
+					android:visibility="gone"></LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/fragment_home_header_tutup_buku_menu"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:paddingHorizontal="10dp">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:gravity="center"
+					android:text="Tutup Buku"
+					android:textSize="16sp"
+					android:textStyle="bold" />
+
+				<LinearLayout
+					android:id="@+id/fragment_home_header_tutup_buku_menu_active_icon"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:background="@color/red"
+					android:orientation="horizontal"
+					android:visibility="gone"></LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/fragment_home_header_memo_menu"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:paddingHorizontal="10dp">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:gravity="center"
+					android:text="Memo"
+					android:textSize="16sp"
+					android:textStyle="bold" />
+
+				<LinearLayout
+					android:id="@+id/fragment_home_header_memo_menu_active_icon"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:background="@color/red"
+					android:orientation="horizontal"
+					android:visibility="gone"></LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</HorizontalScrollView>
+
+	<LinearLayout
+		android:id="@+id/linearLayout2"
+		android:layout_width="0dp"
+		android:layout_height="1dp"
+		android:background="@color/bottom_navbar_divider"
+		android:orientation="horizontal"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+	<LinearLayout
+		android:id="@+id/linearLayout3"
+		android:layout_width="0dp"
+		android:layout_height="53dp"
+		android:orientation="horizontal"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="0.33"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Pendapatan"
+				android:textAlignment="center" />
+
+			<TextView
+				android:id="@+id/fragment_home_summary_income_text"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:text="0"
+				android:textAlignment="center"
+				android:textColor="@color/light_blue"
+				android:textSize="16sp"
+				android:autoSizeMaxTextSize="16sp"
+				android:autoSizeTextType="uniform"
+				android:maxLines="1"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="0.33"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Pengeluaran"
+				android:textAlignment="center" />
+
+			<TextView
+				android:id="@+id/fragment_home_summary_outcome_text"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:text="0"
+				android:textAlignment="center"
+				android:textColor="@color/red"
+				android:textSize="16sp"
+				android:autoSizeMaxTextSize="16sp"
+				android:autoSizeTextType="uniform"
+				android:maxLines="1" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="0.33"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Total"
+				android:textAlignment="center" />
+
+			<TextView
+				android:id="@+id/fragment_home_summary_total_text"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:text="0"
+				android:textAlignment="center"
+				android:textSize="16sp"
+				android:autoSizeMaxTextSize="16sp"
+				android:autoSizeTextType="uniform"
+				android:maxLines="1"/>
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/linearLayout4"
+		android:layout_width="0dp"
+		android:layout_height="1dp"
+		android:background="@color/bottom_navbar_divider"
+		android:orientation="horizontal"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+	<FrameLayout
+		android:id="@+id/HomeFragmentContainer"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+	<ImageView
+		android:id="@+id/fab_add"
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+		android:layout_marginEnd="32dp"
+		android:layout_marginBottom="32dp"
+		android:background="@drawable/fab_add_icon"
+		android:padding="5dp"
+		android:src="@drawable/add_24"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

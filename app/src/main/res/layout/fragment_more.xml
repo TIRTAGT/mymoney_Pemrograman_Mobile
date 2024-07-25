@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="1dp"
+		android:orientation="vertical"
+		android:paddingBottom="8dp">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dp"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/app_name"
+				android:textSize="30sp"
+				android:textStyle="bold" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="v0.1"
+				android:textSize="16sp"
+				android:textStyle="bold" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginHorizontal="10dp"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Kelompok 7 Aplikasi Mobile"
+				android:textSize="17sp"
+				android:textStyle="bold" />
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginHorizontal="15dp"
+				android:layout_marginVertical="5dp"
+				android:text="- Matthew Tirtawidjaja\n- Dimas Alief\n- Fahmi Affandy\n- Fahri Octavian\n- Satrio ANDharbenny\n- Abrar Saskara"
+				android:textSize="17sp"
+				android:textStyle="bold" />
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="3dp"
+		android:background="@color/bottom_navbar_divider"
+		android:orientation="horizontal"></LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginTop="10dp"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="25dp"
+			android:baselineAligned="false"
+			android:orientation="horizontal">
+
+			<LinearLayout
+				android:id="@+id/fragment_more_category_menu"
+				android:layout_width="match_parent"
+				android:layout_height="80dp"
+				android:layout_weight="0.33"
+				android:orientation="vertical">
+
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="58dp"
+					app:srcCompat="@drawable/category_24" />
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center_horizontal"
+					android:text="Kategori"
+					android:textSize="16sp" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/fragment_more_asset_menu"
+				android:layout_width="match_parent"
+				android:layout_height="80dp"
+				android:layout_weight="0.33"
+				android:orientation="vertical">
+
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="58dp"
+					app:srcCompat="@drawable/database_24" />
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center_horizontal"
+					android:text="Kelola Aset"
+					android:textSize="16sp" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/fragment_more_pin_menu"
+				android:layout_width="match_parent"
+				android:layout_height="80dp"
+				android:layout_weight="0.33"
+				android:orientation="vertical">
+
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="58dp"
+					app:srcCompat="@drawable/fiber_pin_24" />
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center_horizontal"
+					android:text="Kata Sandi"
+					android:textSize="16sp" />
+			</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:baselineAligned="false"
+			android:orientation="horizontal">
+
+			<LinearLayout
+				android:id="@+id/fragment_more_currency_menu"
+				android:layout_width="match_parent"
+				android:layout_height="80dp"
+				android:layout_weight="0.33"
+				android:orientation="vertical">
+
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="58dp"
+					app:srcCompat="@drawable/currency_exchange_24" />
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center_horizontal"
+					android:text="Kurs Mata Uang"
+					android:textSize="16sp" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/fragment_more_stats_menu"
+				android:layout_width="match_parent"
+				android:layout_height="80dp"
+				android:layout_weight="0.33"
+				android:orientation="vertical">
+
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="58dp"
+					app:srcCompat="@drawable/finance_24" />
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center_horizontal"
+					android:text="Statistik"
+					android:textSize="16sp" />
+			</LinearLayout>
+
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>
